@@ -65,3 +65,27 @@ footer {
   height: 50px;
   background-color: #aaa;
 }
+
+/*レスポンシブ対応*/
+@media screen and (max-width: 425px) {
+  header {
+    width: 100%; /*幅100%*/
+  }
+
+  main {
+    width: 100%; /*幅100%*/
+    display: block; /*横並び→縦並び*/
+  }
+
+  .step-box {
+    width: 90%; /*幅90%*/
+    margin-left: auto; /*中央寄せ*/
+    margin-right: auto;
+    margin-bottom: 20px; /*余白20px*/
+  }
+
+  .step-box:last-child {
+    margin-left: auto; /*中央寄せ*/
+    margin-right: auto;
+  }
+}
